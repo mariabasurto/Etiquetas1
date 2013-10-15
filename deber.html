@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload="call()">
+<div id="hola"></div>
+</body>
+</html>
+<script>
+	function call(){
+	
+		var etiqueta="";
+		
+		etiqueta+="<p> La hora es:<time> 00:51 </time></p>"
+		etiqueta+="<hgroup><h1>Pagina Web en html5</h1></hgroup>"
+		etiqueta+="<nav><ul><li>Inicio</li><li>Contacto</li><li>Media</li></ul></nav>"
+		etiqueta+="<audio controls='controls'><source src='audio.mp3' type='audio/mp3' /><source src=''></audio><br>"
+		etiqueta+="<form><label for='nombr'>Nombre</label><input type='text' id='nombre' placeholder='Escribe tu nombre' required</form>"
+		etiqueta+="<input list='canales'/><datalist id='canales'><option value='Php'/><option value='Html'/></datalist><br>"
+		etiqueta+="<details><summary>Programacion</summary>Etiquetas de html5</details><br>"
+		etiqueta+="<p> <figure> Se da como un enter a la<img src='imagen.jpg'/></figure>imagen, se pueden hacer listas</p><br>"
+		etiqueta+="	<progress value='50' max='100'>	tu navegador no soporta este control</progress><br>"
+		etiqueta+="<video width='320' height='240' controls='controls' poster='imagen.jpg'><source src='video.mp4' type='video/mp4'/>tu navergador no e scompatible con html5</video>"
+		
+		document.getElementById('hola').innerHTML=etiqueta;
+		
+	
+	}
+	
+</script>
